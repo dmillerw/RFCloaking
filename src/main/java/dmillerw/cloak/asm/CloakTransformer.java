@@ -19,7 +19,7 @@ public class CloakTransformer implements IClassTransformer {
 
     private static FMLDeobfuscatingRemapper remapper = FMLDeobfuscatingRemapper.INSTANCE;
 
-    private static final String STATIC_HANDLER = "dmillerw/shield/asm/StaticMethodHandler";
+    private static final String STATIC_HANDLER = "dmillerw/cloak/asm/StaticMethodHandler";
 
     private static final String STATIC_GETBLOCK = "getBlock";
     private static final String STATIC_GETBLOCK_DESC = "(Lnet/minecraft/world/chunk/Chunk;III)Lnet/minecraft/block/Block;";
