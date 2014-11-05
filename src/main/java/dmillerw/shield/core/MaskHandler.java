@@ -2,14 +2,16 @@ package dmillerw.shield.core;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import dmillerw.shield.network.PacketClientUpdateMasks;
 import dmillerw.shield.network.PacketHandler;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author dmillerw
@@ -18,7 +20,7 @@ public class MaskHandler {
 
     public static final MaskHandler INSTANCE = new MaskHandler();
 
-    private Set<IMaskProvider> maskProviders = Sets.newHashSet();
+    private List<IMaskProvider> maskProviders = Lists.newArrayList();
 
     public void registerMaskProvider(IMaskProvider maskProvider) {
         maskProviders.add(maskProvider);
@@ -28,6 +30,23 @@ public class MaskHandler {
     public void removeMaskProvider(IMaskProvider maskProvider) {
         maskProviders.remove(maskProvider);
         markDirty(maskProviders, maskProvider.getDimensionID());
+    }
+
+    public List<IMaskProvider> getProvidersForDimension(int dimension) {
+        if (dimension == Integer.MIN_VALUE) {
+            return maskProviders;
+        } else {
+            List<IMaskProvider> temp = Lists.newArrayList();
+            for (IMaskProvider maskProvider : maskProviders) {
+                if (maskProvider.getDimensionID() == dimension)
+                    temp.add(maskProvider);
+            }
+            return temp;
+        }
+    }
+
+    private Map<Integer, List<MaskedArea>> collectAndSort() {
+        return collectAndSort(maskProviders);
     }
 
     private Map<Integer, List<MaskedArea>> collectAndSort(Collection<IMaskProvider> maskProviders) {

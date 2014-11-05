@@ -1,14 +1,19 @@
 package dmillerw.shield.tile;
 
+import com.google.common.collect.Lists;
 import dmillerw.shield.core.IMaskProvider;
 import dmillerw.shield.core.MaskHandler;
 import dmillerw.shield.core.MaskedArea;
 import net.minecraft.tileentity.TileEntity;
 
+import java.util.List;
+
 /**
  * @author dmillerw
  */
 public class TileMaskController extends TileEntity implements IMaskProvider {
+
+    private static final List<String> EMPTY_LIST = Lists.newArrayList();
 
     private MaskedArea maskedArea;
 
@@ -84,7 +89,7 @@ public class TileMaskController extends TileEntity implements IMaskProvider {
     }
 
     @Override
-    public String[] getListedNames() {
-        return new String[0];
+    public List<String> getListedNames() {
+        return EMPTY_LIST;
     }
 }

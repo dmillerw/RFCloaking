@@ -1,5 +1,7 @@
 package dmillerw.shield.core;
 
+import java.util.List;
+
 /**
  * @author dmillerw
  */
@@ -19,5 +21,5 @@ public interface IMaskProvider {
      */
     public boolean whitelist();
 
-    public String[] getListedNames();
+    public List<String> getListedNames();
 }
