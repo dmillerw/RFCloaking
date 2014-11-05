@@ -7,11 +7,11 @@ import java.util.Map;
 /**
  * @author dmillerw
  */
-public class ShieldCorePlugin implements IFMLLoadingPlugin {
+public class CloakCorePlugin implements IFMLLoadingPlugin {
 
     @Override
     public String[] getASMTransformerClass() {
-        return new String[] { "dmillerw.shield.asm.ShieldTransformer" };
+        return new String[] { "dmillerw.cloak.asm.CloakTransformer" };
     }
 
     @Override

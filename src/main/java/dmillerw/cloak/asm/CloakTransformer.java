@@ -15,7 +15,7 @@ import java.util.Iterator;
 /**
  * @author dmillerw
  */
-public class ShieldTransformer implements IClassTransformer {
+public class CloakTransformer implements IClassTransformer {
 
     private static FMLDeobfuscatingRemapper remapper = FMLDeobfuscatingRemapper.INSTANCE;
 
