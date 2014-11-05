@@ -1,4 +1,4 @@
-package dmillerw.shield.asm;
+package dmillerw.cloak.asm;
 
 import cpw.mods.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper;
 import net.minecraft.launchwrapper.IClassTransformer;

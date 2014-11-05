@@ -1,4 +1,4 @@
-package dmillerw.shield.network;
+package dmillerw.cloak.network;
 
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;

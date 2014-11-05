@@ -1,12 +1,12 @@
-package dmillerw.shield.client;
+package dmillerw.cloak.client;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.relauncher.Side;
-import dmillerw.shield.core.CommonProxy;
-import dmillerw.shield.network.PacketClientUpdateMasks;
+import dmillerw.cloak.core.CommonProxy;
+import dmillerw.cloak.network.PacketClientUpdateMasks;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;

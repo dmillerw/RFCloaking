@@ -1,9 +1,9 @@
-package dmillerw.shield.tile;
+package dmillerw.cloak.tile;
 
 import com.google.common.collect.Lists;
-import dmillerw.shield.core.IMaskProvider;
-import dmillerw.shield.core.MaskHandler;
-import dmillerw.shield.core.MaskedArea;
+import dmillerw.cloak.core.IMaskProvider;
+import dmillerw.cloak.core.MaskHandler;
+import dmillerw.cloak.core.MaskedArea;
 import net.minecraft.tileentity.TileEntity;
 
 import java.util.List;

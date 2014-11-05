@@ -1,11 +1,11 @@
-package dmillerw.shield.network;
+package dmillerw.cloak.network;
 
 import com.google.common.collect.Lists;
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
 import cpw.mods.fml.common.network.simpleimpl.MessageContext;
-import dmillerw.shield.client.ClientMaskHandler;
-import dmillerw.shield.core.MaskedArea;
+import dmillerw.cloak.client.ClientMaskHandler;
+import dmillerw.cloak.core.MaskedArea;
 import io.netty.buffer.ByteBuf;
 
 import java.util.List;

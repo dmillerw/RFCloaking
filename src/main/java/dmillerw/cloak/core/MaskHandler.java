@@ -1,12 +1,12 @@
-package dmillerw.shield.core;
+package dmillerw.cloak.core;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
-import dmillerw.shield.network.PacketClientUpdateMasks;
-import dmillerw.shield.network.PacketHandler;
+import dmillerw.cloak.network.PacketClientUpdateMasks;
+import dmillerw.cloak.network.PacketHandler;
 
 import java.util.ArrayList;
 import java.util.Collection;

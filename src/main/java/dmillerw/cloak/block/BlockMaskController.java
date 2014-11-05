@@ -1,6 +1,6 @@
-package dmillerw.shield.block;
+package dmillerw.cloak.block;
 
-import dmillerw.shield.tile.TileMaskController;
+import dmillerw.cloak.tile.TileMaskController;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;

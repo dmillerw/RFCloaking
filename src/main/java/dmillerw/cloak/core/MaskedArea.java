@@ -1,6 +1,6 @@
-package dmillerw.shield.core;
+package dmillerw.cloak.core;
 
-import dmillerw.shield.network.PacketHandler;
+import dmillerw.cloak.network.PacketHandler;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.EnumSkyBlock;

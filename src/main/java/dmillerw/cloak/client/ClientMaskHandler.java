@@ -1,10 +1,10 @@
-package dmillerw.shield.client;
+package dmillerw.cloak.client;
 
 import com.google.common.collect.Lists;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
-import dmillerw.shield.core.MaskedArea;
-import dmillerw.shield.network.PacketClientUpdateMasks;
+import dmillerw.cloak.core.MaskedArea;
+import dmillerw.cloak.network.PacketClientUpdateMasks;
 
 import java.util.List;
 

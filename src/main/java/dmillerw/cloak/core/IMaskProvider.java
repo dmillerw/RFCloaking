@@ -1,4 +1,4 @@
-package dmillerw.shield.core;
+package dmillerw.cloak.core;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package dmillerw.shield.asm;
+package dmillerw.cloak.asm;
 
-import dmillerw.shield.RFShielding;
+import dmillerw.cloak.RFCloaking;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.AxisAlignedBB;
@@ -15,10 +15,10 @@ import java.util.List;
 public class StaticMethodHandler {
 
     public static Block getBlock(Chunk chunk, int x, int y, int z) {
-        return RFShielding.proxy.getBlock(chunk, x, y, z);
+        return RFCloaking.proxy.getBlock(chunk, x, y, z);
     }
 
     public static void addCollisionBoxesToList(Block block, World world, int x, int y, int z, AxisAlignedBB mask, List list, Entity entity) {
-        RFShielding.proxy.addCollisionBoxesToList(block, world, x, y, z, mask, list, entity);
+        RFCloaking.proxy.addCollisionBoxesToList(block, world, x, y, z, mask, list, entity);
     }
 }

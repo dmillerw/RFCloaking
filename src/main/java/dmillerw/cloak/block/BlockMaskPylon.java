@@ -1,4 +1,4 @@
-package dmillerw.shield.block;
+package dmillerw.cloak.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

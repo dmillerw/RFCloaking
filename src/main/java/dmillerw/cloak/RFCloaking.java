@@ -1,21 +1,21 @@
-package dmillerw.shield;
+package dmillerw.cloak;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import dmillerw.shield.core.CommonProxy;
+import dmillerw.cloak.core.CommonProxy;
 import net.minecraft.block.Block;
 
 /**
  * @author dmillerw
  */
-@Mod(modid = "RFShielding", name = "RFShielding", version = "%MOD_VERSION%")
-public class RFShielding {
+@Mod(modid = "RFCloaking", name = "RFCloaking", version = "%MOD_VERSION%")
+public class RFCloaking {
 
-    @Mod.Instance
-    public static RFShielding instance;
+    @Mod.Instance("RFCloaking")
+    public static RFCloaking instance;
 
-    @SidedProxy(serverSide = "dmillerw.shield.core.CommonProxy", clientSide = "dmillerw.shield.client.ClientProxy")
+    @SidedProxy(serverSide = "dmillerw.cloak.core.CommonProxy", clientSide = "dmillerw.cloak.client.ClientProxy")
     public static CommonProxy proxy;
 
     public static Block maskController;

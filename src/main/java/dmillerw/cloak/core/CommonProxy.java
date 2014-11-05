@@ -1,15 +1,15 @@
-package dmillerw.shield.core;
+package dmillerw.cloak.core;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import dmillerw.shield.RFShielding;
-import dmillerw.shield.block.BlockMaskController;
-import dmillerw.shield.network.PacketClientUpdateMasks;
-import dmillerw.shield.network.PacketHandler;
-import dmillerw.shield.tile.TileMaskController;
+import dmillerw.cloak.RFCloaking;
+import dmillerw.cloak.block.BlockMaskController;
+import dmillerw.cloak.network.PacketClientUpdateMasks;
+import dmillerw.cloak.network.PacketHandler;
+import dmillerw.cloak.tile.TileMaskController;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -25,8 +25,8 @@ import java.util.List;
 public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
-        RFShielding.maskController = new BlockMaskController().setBlockName("mask_controller");
-        GameRegistry.registerBlock(RFShielding.maskController, "mask_controller");
+        RFCloaking.maskController = new BlockMaskController().setBlockName("mask_controller");
+        GameRegistry.registerBlock(RFCloaking.maskController, "mask_controller");
         GameRegistry.registerTileEntity(TileMaskController.class, "RFShielding:mask_controller");
 
         PacketHandler.initialize();
